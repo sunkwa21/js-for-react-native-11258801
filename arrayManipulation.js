@@ -5,3 +5,14 @@ function processArray(arr) {
 }
 
 module.exports = { processArray };
+
+
+// arrayManipulation.js
+
+function formatArrayStrings(strings, numbers) {
+    return strings.map((str, index) => {
+        return numbers[index] % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
+    });
+}
+
+module.exports = { processArray, formatArrayStrings };
